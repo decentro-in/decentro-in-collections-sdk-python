@@ -2,9 +2,8 @@
 
 Collections
 
-
 [![PyPI](https://img.shields.io/badge/PyPI-v1.0.0-blue)](https://pypi.org/project/decentro-in-collections-python-sdk/1.0.0)
-[![README.md](https://img.shields.io/badge/README-Click%20Here-green)](https://github.com/decentro-in/decentro-in-collections-sdk/tree/master/python#readme)
+[![README.md](https://img.shields.io/badge/README-Click%20Here-green)](https://github.com/decentro-in/decentro-in-collections-sdk-python/tree/master#readme)
 [![More Info](https://img.shields.io/badge/More%20Info-Click%20Here-orange)](https://decentro.tech)
 
 ## Table of Contents<a id="table-of-contents"></a>
@@ -17,11 +16,11 @@ Collections
 - [Async](#async)
 - [Raw HTTP Response](#raw-http-response)
 - [Reference](#reference)
-  * [`decentro.collections.generate_payment_link`](#decentrocollectionsgenerate_payment_link)
-  * [`decentro.collections.get_transaction_status`](#decentrocollectionsget_transaction_status)
-  * [`decentro.collections.issue_collect_request`](#decentrocollectionsissue_collect_request)
-  * [`decentro.collections.issue_upi_refund`](#decentrocollectionsissue_upi_refund)
-  * [`decentro.collections.validate_upi_handle`](#decentrocollectionsvalidate_upi_handle)
+  - [`decentro.collections.generate_payment_link`](#decentrocollectionsgenerate_payment_link)
+  - [`decentro.collections.get_transaction_status`](#decentrocollectionsget_transaction_status)
+  - [`decentro.collections.issue_collect_request`](#decentrocollectionsissue_collect_request)
+  - [`decentro.collections.issue_upi_refund`](#decentrocollectionsissue_upi_refund)
+  - [`decentro.collections.validate_upi_handle`](#decentrocollectionsvalidate_upi_handle)
 
 <!-- tocstop -->
 
@@ -176,8 +175,8 @@ except ApiException as e:
     pprint(e.round_trip_time)
 ```
 
-
 ## Reference<a id="reference"></a>
+
 ### `decentro.collections.generate_payment_link`<a id="decentrocollectionsgenerate_payment_link"></a>
 
 Generate payment link
@@ -218,6 +217,7 @@ generate_payment_link_response = decentro.collections.generate_payment_link(
 #### ⚙️ Request Body<a id="⚙️-request-body"></a>
 
 [`GeneratePaymentLinkRequest`](./decentro_in_collections_client/type/generate_payment_link_request.py)
+
 #### 🔄 Return<a id="🔄-return"></a>
 
 [`GeneratePaymentLinkResponse`](./decentro_in_collections_client/pydantic/generate_payment_link_response.py)
@@ -292,6 +292,7 @@ issue_collect_request_response = decentro.collections.issue_collect_request(
 #### ⚙️ Request Body<a id="⚙️-request-body"></a>
 
 [`IssueCollectRequestRequest`](./decentro_in_collections_client/type/issue_collect_request_request.py)
+
 #### 🔄 Return<a id="🔄-return"></a>
 
 [`IssueCollectRequestResponse`](./decentro_in_collections_client/pydantic/issue_collect_request_response.py)
@@ -332,6 +333,7 @@ issue_upi_refund_response = decentro.collections.issue_upi_refund(
 #### ⚙️ Request Body<a id="⚙️-request-body"></a>
 
 [`IssueUpiRefundRequest`](./decentro_in_collections_client/type/issue_upi_refund_request.py)
+
 #### 🔄 Return<a id="🔄-return"></a>
 
 [`IssueUpiRefundResponse`](./decentro_in_collections_client/pydantic/issue_upi_refund_response.py)
@@ -369,6 +371,7 @@ validate_upi_handle_response = decentro.collections.validate_upi_handle(
 #### ⚙️ Request Body<a id="⚙️-request-body"></a>
 
 [`ValidateUpiHandleRequest`](./decentro_in_collections_client/type/validate_upi_handle_request.py)
+
 #### 🔄 Return<a id="🔄-return"></a>
 
 [`ValidateUpiHandleResponse`](./decentro_in_collections_client/pydantic/validate_upi_handle_response.py)
@@ -380,5 +383,3 @@ validate_upi_handle_response = decentro.collections.validate_upi_handle(
 [🔙 **Back to Table of Contents**](#table-of-contents)
 
 ---
-
-
